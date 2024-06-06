@@ -23,8 +23,8 @@ services:
 
   worker:
     build:
-      dockerfile: ../worker/Dockerfile
-      context: ../worker/
+      dockerfile: worker/Dockerfile
+      context: ..
     depends_on:
       - db
       - redis
