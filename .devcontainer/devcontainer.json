@@ -2,6 +2,5 @@
 	"name": "langfuse dev",
     "dockerComposeFile": "../docker-compose.build.yml",
     "service": "server",
-    "forwardPorts": ["3000", "db:5432", "redis:6379", "worker:3030"],
-	"postCreateCommand": "cp .env.example.dev .env && pnpm install && pnpm --filter=shared run db:migrate && pnpm run dev",
+    "forwardPorts": ["3000"]
 }
